@@ -1,0 +1,206 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Outfit', sans-serif;
+}
+
+
+:root {
+    /* Primary colours */
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+
+    /* Neutral */
+    --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+    --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+/* I had no time to comment on this work, it's more of a rush work. 
+But I will definitely come back to comment on it */
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Very-dark-blue-main-BG);
+}
+
+.main-container2 {
+    width: 18rem;
+    height: 29rem;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: flex-start;
+    gap: 1rem;
+    border-radius: 1.2rem;
+    /* border: 1px solid var(--Black); */
+    background-color: var(--Very-dark-blue-card-BG);
+    box-shadow: 0px 20px 27px 6px rgba(0,0,0,0.1);
+}
+
+.img-wrapper {
+    position: relative;
+}
+.img {
+    width: 16rem;
+    height: 15rem;
+    display: flex;
+    position: relative;
+    left: 0rem;
+    align-self: center;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition-delay: 0ms;
+}
+
+.image-cover {
+    background-color: hsla(178, 100%, 50%, 0.1);
+    width: 16rem;
+    height: 15rem;
+    position: absolute;
+    opacity: 10%;
+    top: 0;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    display: none;
+}
+
+.content {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    bottom: 6rem;
+    left: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    object-position: center;
+}
+.img-wrapper > img,
+.img-wrapper > .content,
+.img-wrapper > .image-cover {
+    transition: 200ms ease-in-out;
+}
+
+.img-wrapper > .content.fade,
+.img-wrapper > .image-cover {
+    opacity: 0;
+}
+.img-wrapper:hover > .content.fade,
+.img-wrapper:hover > .image-cover {
+    opacity: 1;
+    display: block;
+    /* background: hsla(178, 100%, 50%, .3); */
+}
+
+/* this is for the title in the card */
+.header-text {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--Soft-blue);
+    cursor: pointer;
+    transition-delay: 0ms;
+}
+.header-text:hover {
+    color: var(--Cyan);
+}
+
+/* this is for the description under the header text, lol I should 
+probably learn how to give good titles to my elements */
+.body-text {
+    color: var(--Soft-blue);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.crypto-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: var(--Soft-blue);
+}
+.text1 {
+    color: var(--Cyan);
+    font-family: 'Outfit', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    position: relative;
+    left: 0.5rem;
+}
+
+.ethereum {
+    position: relative;
+    left: 0.1rem;
+}
+
+img {
+    position: relative;
+    left: 5.6rem;
+}
+.text2 {
+    position: relative;
+    font-family: 'Outfit', sans-serif;
+    left: 6rem;
+}
+
+hr{
+    width: 16rem;
+    height: 0rem;
+    color: var(--Very-dark-blue-line);
+}
+
+.jules-info {
+    display: flex;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+}
+.jules {
+    width: 29px;
+    height: 29px;
+    position: relative;
+    left: 0.1rem;
+}
+
+.Creo {
+    position: relative;
+    left: 0.8rem;
+    color: var(--Soft-blue);
+}
+.J-W {
+    position: relative;
+    left: 1.2rem;
+    color: var(--Soft-blue);
+    cursor: pointer;
+}
+.J-W:hover {
+    color: var(--Cyan);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    position: relative;
+    top: 4rem;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
