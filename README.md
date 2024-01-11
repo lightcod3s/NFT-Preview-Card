@@ -29,13 +29,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./my-design/Screenshot%202024-01-11%20at%2021-00-30%20Frontend%20Mentor%20NFT%20preview%20card%20component.png)
+![my design](./my-design/Screenshot%202024-01-11%20at%2021-00-30%20Frontend%20Mentor%20NFT%20preview%20card%20component.png)
 
 
 ### Links
 
 - Solution URL: [lightcod3s](https://github.com/lightcod3s/NFT-Preview-Card.git)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [lightcod3s](https://nft-preview-card-weld.vercel.app/)
 
 ## My process
 
